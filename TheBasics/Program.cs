@@ -5,7 +5,7 @@
     internal class Program
     {
         //Main är en speciell metod som startar programmet.
-        //En metod är en inkapslad uppsättning instruktioner somåstadkommer något.
+        //En metod är en inkapslad uppsättning instruktioner som åstadkommer något.
         //Metoden Main vill ha en array (lista ungefär) som ofta kallas args men som skulle kunna heta vad somhelst.
         //Array args kan innehålla information för att metoden ska vara nöjd med livet.
         //I vårt exempel används inte arrayen args.

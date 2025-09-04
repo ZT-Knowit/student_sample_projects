@@ -4,15 +4,15 @@
     {
         static void Main(string[] args)
         {
-            //Arrayer är variabler som kan hålla flera värden. En array är som en rad med fack |_|_|_|_| där du kan stoppa ett värde i varje fack.
-            //Tänk att du har en massa köttätande växter med olika namn som du behöver hålla reda på.
-            //Då kan en array vara ett bra ställe att lagra namnen i.
+            /*Arrayer är variabler som kan hålla flera värden. En array är som en rad med fack |_|_|_|_| där du kan stoppa ett värde i varje fack.
+            Tänk att du har en massa köttätande växter med olika namn som du behöver hålla reda på.
+            Då kan en array vara ett bra ställe att lagra namnen i.*/
 
-            //På samma sätt som för andra variabler så behöver en array en typ som talar om vad som kan läggas i arrayen.
-            //För namnen på växterna passar typen string bra.
-            //Hakparenteserna [] talar om för kompilatorn att vi har att göra med en array. Kompilatorn vill också veta 
-            //hur många platser som ska finnas i arrayen.
-            //Nedan visas två sätt att skapa arrayer på, men det finns fler.
+            /*På samma sätt som för andra variabler så behöver en array en typ som talar om vad som kan läggas i arrayen.
+            För namnen på växterna passar typen string bra.
+            Hakparenteserna [] talar om för kompilatorn att vi har att göra med en array. Kompilatorn vill också veta 
+            hur många platser som ska finnas i arrayen.
+            Nedan visas två sätt att skapa arrayer på, men det finns fler.*/
 
             //Här skapar vi en stringarray och initierar den samtidigt med våra värden och behöver därför inte ange någon storlek på arrayen.
             string[] carnivorousPlants = {"Venus flugfälla", "Kannranka", "Sileshår", "Flugtrumpet" };
@@ -40,11 +40,11 @@
             // Vi skapar en heltalsarray med 100 platser.
             int[] numbersILike = new int[100];
 
-            //for-loopen: "Den Styrda Räknaren"
-            //Det här är loopen för när du vet exakt hur många gånger du vill att koden ska köras.
-            //Den har en inbyggd räknare som tar hand om start, stopp och steg.
-            //I detta fall använder vi arrayens längd för att tala om hur många varv loopen ska köra.
-            //Vi hade lika gärna kunnat skriva 100. (Vi börjar räkna på 0)
+            /*for-loopen: "Den Styrda Räknaren"
+            Det här är loopen för när du vet exakt hur många gånger du vill att koden ska köras.
+            Den har en inbyggd räknare som tar hand om start, stopp och steg.
+            I detta fall använder vi arrayens längd för att tala om hur många varv loopen ska köra.
+            Vi hade lika gärna kunnat skriva 100. (Vi börjar räkna på 0)*/
 
 
             for (int i = 0; i < numbersILike.Length; i++)
@@ -55,12 +55,12 @@
                 numbersILike[i] = i;
             }
 
-            //Nu finns värdena 0-99 i arrayen.
-            //Vi skriver ut dem med
-            //foreach-loopen: "Den Automatiska Utforskaren"
-            //Den här loopen används när du vill gå igenom varje enskilt element i en samling,
-            //utan att behöva hålla reda på index.
-            //Det är enklare att läsa och minskar risken för fel, eftersom den sköter allt åt dig.
+            /*Nu finns värdena 0-99 i arrayen.
+            Vi skriver ut dem med
+            foreach-loopen: "Den Automatiska Utforskaren"
+            Den här loopen används när du vill gå igenom varje enskilt element i en samling,
+            utan att behöva hålla reda på index.
+            Det är enklare att läsa och minskar risken för fel, eftersom den sköter allt åt dig.*/
 
             foreach (int number in numbersILike)
             {
@@ -69,10 +69,10 @@
             }
 
 
-            //Ibland vet man inte hur länge en loop ska köras
-            //while-loopen: "Den Villkorliga Utföraren"
-            //Använd den här loopen när du inte vet i förväg hur många gånger koden ska köras.
-            //Koden fortsätter att exekveras så länge ett visst villkor är sant.
+            /*Ibland vet man inte hur länge en loop ska köras
+            while-loopen: "Den Villkorliga Utföraren"
+            Använd den här loopen när du inte vet i förväg hur många gånger koden ska köras.
+            Koden fortsätter att exekveras så länge ett visst villkor är sant.*/
 
             int randomNumber;
             int sum = 0;
