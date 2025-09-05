@@ -42,6 +42,47 @@
             //Skriver ut summan i konsolfönstret.
             Console.WriteLine(sum);
 
+            Console.WriteLine("------ Här konverterar vi med int.Parse och fångar vi ett exception \n om det inte går att konvertera en sträng till ett heltal----------");
+            Console.WriteLine("Hur gammal är du?");
+            string ageAsString = Console.ReadLine();
+            int age = 0;
+            //Lita aldrig på att användaren matar in det du förväntar dig.
+            //Om användaren matar in något som inte är ett heltal kraschar programmet.
+            //Vi kan hantera detta med en try-catch-sats.
+            try
+            {
+                age = int.Parse(ageAsString);
+                Console.WriteLine($"Du är {age} år gammal.");
+            }
+            catch (Exception)
+            {
+                Console.WriteLine($"Det där var inget heltal...");
+            }
+            finally
+            {
+                Console.WriteLine("Tack för visat intresse!");
+            }
+
+            Console.WriteLine("-------Nu kollar vi om konverteringen gick bra när vi försöker konvertera.----------");
+            Console.WriteLine("Hur gammal är du?");
+            ageAsString = Console.ReadLine();
+            age = 0;
+            //Här kollar vi istället om inmatningen är ett heltal med metoden TryParse.
+            //TryParse returnerar true eller false beroende på om inmatningen kan konverteras till ett heltal eller inte.
+            bool canBeConvertedToInt = int.TryParse(ageAsString,out age);
+            //Om inmatningen kan konverteras till ett heltal läggs värdet i variabeln age.
+            //Om inmatningen inte kan konverteras till ett heltal behålls värdet i age som är 0.
+            if (canBeConvertedToInt)
+            {
+                Console.WriteLine($"Du är {age} år gammal.");
+            }
+            else
+            {
+                Console.WriteLine($"{ageAsString} är inget heltal...");
+            }
+            
+            
+
         }
     }
 }
