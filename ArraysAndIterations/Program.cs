@@ -57,8 +57,9 @@
                 numbersILike[i] = i;
             }
 
-            /*Nu finns värdena 0-99 i arrayen.
-            Vi skriver ut dem med
+            //Nu finns värdena 0-99 i arrayen.
+
+            /*Vi skriver ut dem med
             foreach-loopen: "Den Automatiska Utforskaren"
             Den här loopen används när du vill gå igenom varje enskilt element i en samling,
             utan att behöva hålla reda på index.
@@ -118,7 +119,7 @@
 
             /*Foreach-loopen är perfekt för att gå igenom alla element i en lista.
              En foreach-loop använder inte ett index för att komma åt elementen i listan utan
-            går automatiskt igenom alla element i listan.
+             går automatiskt igenom alla element i listan.
             */
 
             foreach (string fruit in fruits)
