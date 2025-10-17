@@ -18,6 +18,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodsAndScope", "MethodsA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmptyProject", "EmptyProject\EmptyProject.csproj", "{CC0FEA4F-12ED-48DA-A665-2D22120BC4A2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectOrientedProgramming", "ObjectOrientedProgramming\ObjectOrientedProgramming.csproj", "{BBE5E88C-C486-4AB2-99BA-54654631B83C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary", "ClassLibrary\ClassLibrary.csproj", "{AC514DE2-89BA-4492-84A3-626CC3169DAD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +48,14 @@ Global
 		{CC0FEA4F-12ED-48DA-A665-2D22120BC4A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC0FEA4F-12ED-48DA-A665-2D22120BC4A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC0FEA4F-12ED-48DA-A665-2D22120BC4A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBE5E88C-C486-4AB2-99BA-54654631B83C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBE5E88C-C486-4AB2-99BA-54654631B83C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBE5E88C-C486-4AB2-99BA-54654631B83C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBE5E88C-C486-4AB2-99BA-54654631B83C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC514DE2-89BA-4492-84A3-626CC3169DAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC514DE2-89BA-4492-84A3-626CC3169DAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC514DE2-89BA-4492-84A3-626CC3169DAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC514DE2-89BA-4492-84A3-626CC3169DAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
