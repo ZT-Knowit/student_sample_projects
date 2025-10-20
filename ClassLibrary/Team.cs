@@ -2,12 +2,13 @@
 {
     public class Team
     {
-        //Egenskaper
+        //Privata fält för klassen Team
         private int _numberOfPlayers;
         private string _teamName = string.Empty;
         private string _coachName = string.Empty;
         private int _numberOfChampionships;
 
+        //Property som kapsar in fältet _numberOfPlayers
         public int NumberOfPlayers { get => _numberOfPlayers; set => _numberOfPlayers = value; }
         public string TeamName { get => _teamName; set => _teamName = value; }
         public string CoachName { get => _coachName; set => _coachName = value; }
