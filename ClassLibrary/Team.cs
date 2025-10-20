@@ -3,10 +3,15 @@
     public class Team
     {
         //Egenskaper
-        public int NumberOfPlayers;
-        public string TeamName = string.Empty;
-        public string CoachName = string.Empty;
-        public int NumberOfChampionships;
+        private int _numberOfPlayers;
+        private string _teamName = string.Empty;
+        private string _coachName = string.Empty;
+        private int _numberOfChampionships;
+
+        public int NumberOfPlayers { get => _numberOfPlayers; set => _numberOfPlayers = value; }
+        public string TeamName { get => _teamName; set => _teamName = value; }
+        public string CoachName { get => _coachName; set => _coachName = value; }
+        public int NumberOfChampionships { get => _numberOfChampionships; set => _numberOfChampionships = value; }
 
         //Konstruktor (speciell metod) som skapar en instans av klassen Team
         public Team(string teamName)
