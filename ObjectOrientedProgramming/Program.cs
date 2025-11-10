@@ -14,7 +14,7 @@
             staarenTeams.ListTeams();
 
             //Lägger till ett nytt lag i kommunen
-            staarenTeams.AddTeam(new FootballTeam("IFK Östersund"));
+            staarenTeams.AddTeam(new FootballTeam("IFK Östersund", new Coach(Gender.Other, " Mohammed Al Hakim", new DateTime(2000,01,01))));
             
             //Anropar metoden ListTeams på instansen staarenTeams igen
             staarenTeams.ListTeams();

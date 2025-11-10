@@ -8,7 +8,7 @@ namespace ClassLibrary
 {
     public class FootballTeam: Team
     {
-        public FootballTeam(string teamName):base(teamName)
+        public FootballTeam(string teamName, Coach coach):base(teamName, coach)
         {
             
         }

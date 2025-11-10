@@ -18,23 +18,28 @@ namespace ClassLibrary
 
         private void CreateExistingTeams()
         {
-            Team ÖBS = new BandyTeam("Östersunds bandysällskap");
-            Team ÖFK = new FootballTeam("Östersunds FK");
-            Team ÖIK = new IceHockeyTeam("Östersunds IK");
+            Coach bandyCoach = new Coach(Gender.Female, "Anna Andersson", new DateTime(1980, 5, 15));
+            Coach footballCoach = new Coach(Gender.Binary, "Pim Svensson", new DateTime(1975, 3, 22));
+            Coach iceHockeyCoach = new Coach(Gender.Male, "Kurt Larsson", new DateTime(1968, 11, 5));
+            Team ÖBS = new BandyTeam("Östersunds bandysällskap", bandyCoach);
+            Team ÖFK = new FootballTeam("Östersunds FK", footballCoach);
+            Team ÖIK = new IceHockeyTeam("Östersunds IK", iceHockeyCoach);
             //Skapar ett ishockeylag av klassen IceHockeyTeam
             //istället för av basklassen Team
-            IceHockeyTeam BIK = new IceHockeyTeam("Brunflo IK");
-            
+            IceHockeyTeam BIK = new IceHockeyTeam("Brunflo IK", iceHockeyCoach);
+
+            ÖBS.TeamCoach.PaySalary(35000m);
+
             //Det går men rekommenderas inte att skapa objekt av basklassen Team
             //LÅT BLI: Team genericTeam = new Team("Generiskt lag");
-            Team OpeIF = new Team("Ope IF");
+            //Team OpeIF = new Team("Ope IF");
             //Usch! Lägg inte till objekt av basklassen Team i listan över lag i kommunen!
             //Kan förhindras genom att göra basklassen abstrakt (abstract)
 
             Teams.Add(ÖBS);
             Teams.Add(ÖFK);
             Teams.Add(ÖIK);            
-            Teams.Add(OpeIF); 
+            //Teams.Add(OpeIF); 
             Teams.Add(BIK);
         }
 

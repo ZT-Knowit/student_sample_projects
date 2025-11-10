@@ -10,7 +10,7 @@ namespace ClassLibrary
     {
         public string SkateSharpenerName;
 
-        public BandyTeam(string teamName):base(teamName)
+        public BandyTeam(string teamName, Coach coach):base(teamName, coach)
         {
             SkateSharpenerName = "Vakant roll";
         }
